@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="#1e88e5"
+        android:id="@+id/coffee_title_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coffee"
+            android:textSize="60sp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#ffff"
+            android:layout_gravity="bottom"
+            android:id="@+id/coffee_title"/>
+    </LinearLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        fab:fab_colorNormal="#ffff"
+        fab:fab_title="v 1.0"
+        fab:fab_icon="@drawable/coffee"
+        fab:fab_colorPressed="#ffe1e1e1"
+        android:id="@+id/view" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="30dp"
+        android:text="Would you like to buy the developer a coffee?"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView" />
+
+    <com.joooonho.SelectableRoundedImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="1 coffee"
+        android:id="@+id/SingleCoffee"
+        android:layout_below="@+id/view"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coffee"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="115dp"
+        app:sriv_oval="true"
+        app:sriv_left_top_corner_radius="16dip"
+        app:sriv_right_top_corner_radius="16dip"
+        app:sriv_left_bottom_corner_radius="16dip"
+        app:sriv_right_bottom_corner_radius="16dip"/>
+
+    <com.joooonho.SelectableRoundedImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:text="2 coffee"
+        android:src="@drawable/coffee2"
+        android:id="@+id/TwoCoffee"
+        android:layout_below="@+id/view"
+        android:scaleType="centerCrop"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="115dp"
+        app:sriv_oval="true"
+        app:sriv_left_top_corner_radius="16dip"
+        app:sriv_right_top_corner_radius="16dip"
+        app:sriv_left_bottom_corner_radius="16dip"
+        app:sriv_right_bottom_corner_radius="16dip"/>
+
+</RelativeLayout>
